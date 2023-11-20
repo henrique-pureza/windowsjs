@@ -1,0 +1,38 @@
+@use "./window/window";
+@use "./taskbar/taskbar";
+@use "./start-menu/start-menu";
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("@/assets/fonts/segoeui.ttf");
+}
+
+* {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 9pt;
+
+    user-select: none;
+}
+
+html, body, .windows {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    background-image: url("@/assets/images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 0;
+}

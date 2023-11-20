@@ -1,0 +1,35 @@
+@keyframes open {
+    from {
+        transform: scale(95%);
+        opacity: 0.3;
+    }
+    to {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes close {
+    to {
+        transform: scale(95%);
+        opacity: 0;
+    }
+}
+
+@keyframes maximize {
+    to {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@keyframes restore {
+    from {
+        transform: scale(105%);
+    }
+    to {
+        transform: scale(100%);
+    }
+}

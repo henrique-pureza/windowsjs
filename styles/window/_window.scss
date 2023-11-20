@@ -1,0 +1,47 @@
+@use "sass:math";
+
+@use "animations";
+@use "border";
+@use "controls";
+@use "dropdown";
+@use "scrollbar";
+@use "window-titlebar";
+
+$width: 450px;
+$height: 350px;
+
+.window-container {
+    width: $width + 11px;
+    height: $height + 11px;
+
+    position: absolute;
+
+    animation: open 0.35s;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+
+    transition: transform .3s;
+}
+
+.default-pos {
+    top: 75px;
+    left: 75px;
+}
+
+.window {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+
+    border: 1px #1a496f solid;
+
+    position: relative;
+
+    z-index: 0;
+
+    box-shadow: #555 1px 1px 15px;
+}

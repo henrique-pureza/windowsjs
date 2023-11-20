@@ -1,0 +1,73 @@
+::-webkit-scrollbar {
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cdcdcd;
+
+    &:hover {
+        background-color: #a6a6a6;
+    }
+
+    &:active {
+        background-color: #606060;
+    }
+}
+
+::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url("./assets/scrollbar_up.png");
+
+    &:hover {
+        background-color: #dadada;
+    }
+
+    &:active {
+        background-color: #606060;
+        background-image: url("./assets/scrollbar_up_active.png");
+    }
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url("./assets/scrollbar_down.png");
+
+    &:hover {
+        background-color: #dadada;
+    }
+
+    &:active {
+        background-color: #606060;
+        background-image: url("./assets/scrollbar_down_active.png");
+    }
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url("./assets/scrollbar_left.png");
+
+    &:hover {
+        background-color: #dadada;
+    }
+
+    &:active {
+        background-color: #606060;
+        background-image: url("./assets/scrollbar_left_active.png");
+    }
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url("./assets/scrollbar_right.png");
+
+    &:hover {
+        background-color: #dadada;
+    }
+
+    &:active {
+        background-color: #606060;
+        background-image: url("./assets/scrollbar_right_active.png");
+    }
+}
+

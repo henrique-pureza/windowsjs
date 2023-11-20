@@ -1,0 +1,79 @@
+$width: 450px;
+$height: 350px;
+
+.border-top,
+.border-bottom,
+.border-left,
+.border-right,
+.border-bottom-left,
+.border-bottom-right,
+.border-top-left,
+.border-top-right {
+    position: absolute;
+
+    z-index: 1;
+}
+
+.border-top, .border-bottom {
+    width: calc(100% - 10px);
+    height: 10px;
+    left: 10px;
+
+    cursor: n-resize;
+}
+
+.border-top {
+    top: 0;
+}
+
+.border-bottom {
+    bottom: 0;
+}
+
+.border-left, .border-right {
+    width: 10px;
+    height: calc(100% - 10px);
+    top: 10px;
+
+    cursor: e-resize;
+}
+
+.border-left {
+    left: 0;
+}
+
+.border-right {
+    right: 0;
+}
+
+.border-top-left,
+.border-top-right,
+.border-bottom-left,
+.border-bottom-right {
+    width: 10px;
+    height: 10px;
+}
+
+.border-top-left, .border-top-right {
+    top: 0;
+}
+
+.border-bottom-left, .border-bottom-right {
+    bottom: 0;
+}
+
+.border-top-left, .border-bottom-left {
+    left: 0;
+}
+
+.border-top-right, .border-bottom-right {
+    right: 0;
+}
+
+.border-top-left, .border-bottom-right {
+    cursor: nwse-resize;
+}
+
+.border-top-right, .border-bottom-left {
+    cursor: nesw-resize;
+}

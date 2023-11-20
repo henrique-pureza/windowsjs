@@ -1,0 +1,249 @@
+.window-content {
+    background-color: #F0F0F0;
+
+    width: 100%;
+    height: calc(100% - 30px);
+
+    position: relative;
+
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+.group-box {
+    border: 1px #DCDCDC solid;
+
+    position: relative;
+
+    padding: 10px;
+}
+
+.group-box-label {
+    position: absolute;
+
+    top: -10px;
+    left: 10px;
+
+    padding: 0 2px;
+
+    background-color: #F0F0F0;
+}
+
+.button {
+    border: 1px #ADADAD solid;
+    background-color: #E1E1E1;
+
+    padding: 3px 13px;
+
+    &:hover {
+        border: 1px #0078D7 solid;
+        background-color: #E5F1FB;
+    }
+
+    &:active {
+        border: 1px #005499 solid;
+        background-color: #CCE4F7;
+    }
+}
+
+.check-box, .combo-box, .radio-button, .input-range, .input-range::-webkit-slider-thumb {
+    appearance: none;
+}
+
+.check-box {
+    width: 13px;
+    height: 13px;
+
+    border: 1px #333 solid;
+
+    background-color: #FFF;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-right: 5px;
+
+    &:hover {
+        border: 1px #0078D7 solid;
+    }
+
+    &:active {
+        border: 1px #005499 solid;
+        border-top: 1px #0078D7 solid;
+        background-color: #CCE4F7;
+    }
+
+    &:checked {
+        background-image: url("@/assets/icons/checkbox_checked.png");
+
+        &:hover {
+            background-image: url("@/assets/icons/checkbox_checked_hover.png");
+        }
+
+        &:active {
+            background-image: url("@/assets/icons/checkbox_checked_active.png");
+        }
+    }
+}
+
+.text-box, .combo-box {
+    outline: none;
+    transition: border 0.5s;
+}
+
+.text-box {
+    border: 1px #7a7a7a solid;
+    padding: 3px;
+
+    background-color: #fff;
+
+    &:hover {
+        border: 1px #000 solid;
+    }
+
+    &:focus {
+        border: 1px #0078d7 solid;
+    }
+}
+
+.combo-box {
+    border: 1px #7a7a7a solid;
+
+    background-color: #fff;
+
+    padding: 5px;
+    padding-left: 2px;
+
+    background-image: url("@/assets/icons/select_arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+
+    &:hover {
+        border: 1px #000 solid;
+    }
+
+    &:focus {
+        border: 1px #0078d7 solid;
+    }
+}
+
+.link {
+    color: #0000ff;
+
+    &:active {
+        color: #ff0000;
+    }
+
+    &:visited {
+        color: #800080;
+    }
+}
+
+.input-number {
+    border: 1px #abadb3 solid;
+
+    outline: none;
+
+    padding: 3px;
+}
+
+.radio-button {
+    border: 1px #333333 solid;
+    background-color: #fff;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 5px;
+
+    &:hover {
+        border: 1px #067bd8 solid;
+    }
+
+    &:active {
+        border: 1px #06589b solid;
+        background-color: #cce4f7;
+    }
+
+    &:checked {
+        background-image: url("@/assets/icons/radio_checked.png");
+
+        &:hover {
+            background-image: url("@/assets/icons/radio_checked_hover.png");
+        }
+
+        &:active {
+            background-image: url("@/assets/icons/radio_checked_active.png");
+        }
+    }
+}
+
+.input-range::-webkit-slider-thumb {
+    border: none;
+
+    position: relative;
+    top: -6px;
+
+    width: 11px;
+    height: 19px;
+
+    background-image: url("@/assets/icons/range_thumb.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: url("@/assets/icons/range_thumb_hover.png");
+    }
+
+    &:active {
+        background-image: url("@/assets/icons/range_thumb_active.png");
+    }
+}
+
+.input-range::-webkit-slider-runnable-track {
+    height: 4px;
+    border: 1px #D6D6D6 solid;
+    background-color: #E7EAEA;
+}
+
+.progress-bar {
+    border: 1px #BCBCBC solid;
+
+    height: 23px;
+
+    background-color: #E6E6E6;
+}
+
+.progress {
+    background-color: #06B025;
+    height: 100%;
+}
+
+.status-bar {
+    background-color: #F0F0F0;
+    border-top: 1px #D7D7D7 solid;
+
+    width: calc(100% - 10px);
+
+    padding: 5px;
+}
+
+.right-corner {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}

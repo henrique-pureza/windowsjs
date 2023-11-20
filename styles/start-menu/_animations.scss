@@ -1,0 +1,39 @@
+@keyframes open-start-menu {
+    0% {
+        opacity: .5;
+        transform: translateY(40px);
+    } 50% {
+        opacity: 1;
+    } 100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes close-start-menu {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    } 50% {
+        opacity: .5;
+    } 100% {
+        transform: translateY(40px);
+    }
+}
+
+@keyframes open-apps {
+    from {
+        height: calc(100% - 20px);
+        margin-top: 20px;
+    } to {
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+@keyframes close-apps {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}

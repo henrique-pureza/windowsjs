@@ -1,0 +1,76 @@
+@use "sass:math";
+
+.window-titlebar {
+    width: calc(100% - 20px);
+    height: 10px;
+
+    padding: 10px;
+
+    background-color: #FFF;
+
+    position: relative;
+}
+
+.window-title {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+
+.window-title-buttons {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    height: calc(100% - 1px);
+
+    display: flex;
+}
+
+.titlebar-button {
+    height: 100%;
+    width: 45px;
+
+    border: none;
+    background-color: #FFF;
+
+    transition: background .2s;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-color: #E5E5E5;
+    }
+
+    &:active {
+        transition: none;
+        background-color: #CACACB;
+    }
+
+    &.minimize {
+        background-image: url("@/assets/icons/minimizar.png");
+        background-position: center 15px;
+    }
+
+    &.maximize {
+        background-image: url("@/assets/icons/maximizar.png");
+    }
+
+    &.close {
+        background-image: url("@/assets/icons/fechar.png");
+
+        &:hover {
+            background-image: url("@/assets/icons/fechar_hover.png");
+            background-color: #E81123;
+        }
+
+        &:active {
+            background-image: url("@/assets/icons/fechar_hover.png");
+            background-color: #F1707A;
+            transition: none;
+        }
+    }
+}
